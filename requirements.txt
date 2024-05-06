@@ -1,0 +1,5 @@
+rich
+tomlkit
+tqdm
+attrs
+pebble
