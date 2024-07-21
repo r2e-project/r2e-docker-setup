@@ -19,11 +19,11 @@ def main():
     # Print out the result of this process to stdout
     result = run_subprocess_shell(
         f"export PATH={PDM_BIN_DIR} \
-            && pip install pipreqs\
             && pdm --version \
             && pdm config install.cache on \
             && pdm config venv.with_pip on \
             && pdm config venv.backend virtualenv \
+            && pip install pipreqs\
             && pdm add -g setuptools \
             && pdm add -g wheel \
         ",
