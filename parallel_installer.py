@@ -23,8 +23,8 @@ def main():
             && pdm config venv.with_pip on \
             && pdm config venv.backend virtualenv \
             && pdm add -g setuptools \
-            && pdm add -g wheel \
             && pip install pipreqs\
+            && pdm add -g wheel \
         ",
     )
 
