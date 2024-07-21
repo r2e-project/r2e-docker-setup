@@ -16,6 +16,7 @@ def main():
     end = int(end)
     parallel = int(parallel)
 
+    # Print out the result of this process to stdout
     result = run_subprocess_shell(
         f"export PATH={PDM_BIN_DIR} \
             && pdm --version \
@@ -27,6 +28,8 @@ def main():
             && pdm add -g wheel \
         ",
     )
+    print("Result of running PDM setup:")
+    print(result)
 
     all_repos = sorted(os.listdir(REPOS_DIR))
     all_repos = all_repos[start:end]
