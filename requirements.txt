@@ -3,3 +3,4 @@ tomlkit
 tqdm
 attrs
 pebble
+pipreqs
